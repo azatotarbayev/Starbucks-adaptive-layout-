@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/*
+    regular 400
+    medium 500
+    semibold 600
+    extrabold 800 
+ */
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: "Montserrat", serif;
+    margin: 0;
+    background-color: #121517;
+    color: #D9D9D9;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 163%;
+    letter-spacing: -0.02em;
+}
+.header 
+{
+    border: 3px solid green;
+    padding: 50px 0;
+}
+.container 
+{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: 1px solid white;
+    display: flex;
+    align-items: baseline;
+    gap: 95px;
+}
+h1, h2
+{
+    font-size: 800;
+}
+a
+{
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+/* STARBUCKS .logo */
+.logo 
+{
+    font-weight: 800;
+    font-size: 37px;
+    letter-spacing: -0.03em;
+    background: linear-gradient(223deg, #237249 0%, #35c65b 100%);
+    background-clip: text;
+    color: transparent;
+}
+.header__link + .header__link
+{
+    margin-left: 95px;    
+}
