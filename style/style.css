@@ -21,16 +21,32 @@ body
     line-height: 163%;
     letter-spacing: -0.02em;
 }
+.container
+{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* STARBUCKS .logo */
+.logo 
+{
+    font-weight: 800;
+    font-size: 37px;
+    letter-spacing: -0.03em;
+}
+.text-gradient
+{
+    background: linear-gradient(223deg, #237249 0%, #35c66b 100%);
+    background-clip: text;
+    color: transparent;
+}
 .header 
 {
     border: 3px solid green;
     padding: 50px 0;
 }
-.container 
+.header .container 
 {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 15px;
     border: 1px solid white;
     display: flex;
     align-items: baseline;
@@ -39,6 +55,7 @@ body
 h1, h2
 {
     font-size: 800;
+    margin: 0;
 }
 a
 {
@@ -46,17 +63,64 @@ a
     text-decoration: none;
 }
 
-/* STARBUCKS .logo */
-.logo 
-{
-    font-weight: 800;
-    font-size: 37px;
-    letter-spacing: -0.03em;
-    background: linear-gradient(223deg, #237249 0%, #35c65b 100%);
-    background-clip: text;
-    color: transparent;
-}
 .header__link + .header__link
 {
     margin-left: 95px;    
+}
+.main 
+{
+
+}
+.welcome 
+{
+
+}
+.container 
+{
+
+}
+/* New Cafe by Starbucks */
+.title 
+{
+    font-size: 80px;
+    line-height: 109%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.welcome__title 
+{
+    
+}
+.welcome__text 
+{
+
+}
+.welcome__btns-wrapper 
+{
+
+}
+.btn 
+{
+
+}
+.link 
+{
+
+}
+.stats 
+{
+
+}
+.stats__item 
+{
+
+}
+.welcome__img-wrapper 
+{
+
+}
+.welcome__img 
+{
+
 }
