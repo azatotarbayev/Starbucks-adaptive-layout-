@@ -10,6 +10,10 @@
 {
     box-sizing: border-box;
 }
+html
+{
+    overflow-x: hidden;
+}
 body
 {
     font-family: "Montserrat", serif;
@@ -18,7 +22,7 @@ body
     color: #D9D9D9;
     font-weight: 400;
     font-size: 20px;
-    line-height: 163%;
+    line-height: 163%; /*процент считается от font-size*/
     letter-spacing: -0.02em;
 }
 .container
@@ -50,38 +54,35 @@ body
     border: 1px solid white;
     display: flex;
     align-items: baseline;
-    gap: 95px;
+    /* gap: 95px; */
 }
 img
 {
     max-width: 100%;
 }
-h1, h2
-{
-    font-size: 800;
-    margin: 0;
-}
 a
 {
     color: #D9D9D9;
     text-decoration: none;
+    transition: opacity 0.2s;
 }
-
-.header__link + .header__link
+a:hover
+{
+    opacity: 0.8;
+}
+.header__link
 {
     margin-left: 95px;    
 }
-.main 
-{
 
+/*******************************************************************/
+.main
+{
+    border: 2px solid red;
 }
 .welcome 
 {
-
-}
-.welcome__desc
-{
-    max-width: 575px;
+    margin-top: 30px;
 }
 .welcome .container 
 {
@@ -90,10 +91,16 @@ a
     justify-content: space-between;
     align-items: center;
 }
-.main
+.welcome__desc
 {
-    border: 2px solid red;
+    max-width: 575px;
 }
+h1, h2
+{
+    font-size: 800;
+    margin: 0;
+}
+
 /* New Cafe by Starbucks */
 .title 
 {
@@ -102,7 +109,6 @@ a
     letter-spacing: -0.03em;
     color: #fff;
 }
-
 .welcome__title 
 {
     margin-bottom: 55px;
@@ -110,7 +116,6 @@ a
 }
 .welcome__title::before
 {
-    border: 1px solid white;
     content: "";
     position: absolute;
     top: 80px;
@@ -189,28 +194,29 @@ a
 {
     content: "";
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    right: -230px;
+    bottom: -160px;
     z-index: -10;
     background-image: url("../images/icons/lines.svg");
     background-size: contain;
     background-position: center;
     width: 860px;
     height: 620px;
+    background-repeat: no-repeat;
 }
 .welcome__img-wrapper::after
 {
     border: 1px solid white;
     content: "";
     position: absolute;
-    bottom: 40px;
-    right: 130px;
+    bottom: 30px;
+    right: 100px;
     z-index: -5;
-    width: 190px;
-    height: 190px;
+    width: 280px;
+    height: 280px;
     border-radius: 100%;
     background: linear-gradient(245deg, rgba(35,114,73,0.55) 0%, rgba(53,198,107,0.73) 51.85%);
-    filter: blur(110px);
+    filter: blur(120px);
 }
 .welcome__img 
 {
