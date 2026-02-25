@@ -230,11 +230,13 @@ h1, h2
 }
 .benefits__container 
 {
-
+    background: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
 }
 .benefits__item 
 {
-
+    max-width: 220px;
+    text-align: center;
+    border: 1px solid red;
 }
 .benefits__img-wrapper 
 {
@@ -242,13 +244,16 @@ h1, h2
 }
 .benefits__icon 
 {
-
+    width: 150px;
 }
 .benefits__title 
 {
-
+    font-weight: 500;
+    font-size: 32px;
+    color: #121517;
 }
 .benefits__desc 
 {
-    
+    line-height: 163%;
+    color: rgba(18, 21, 23, 0.9);
 }
