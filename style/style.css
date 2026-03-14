@@ -184,6 +184,7 @@ p
     font-size: 62px;
     letter-spacing: -0.03em;
     color: #fff;
+    line-height: 109%;
 }
 .span__num::after
 {
@@ -234,7 +235,7 @@ p
 /*Контейнер: Benefits*/
 .benefits 
 {
-    margin-top: 80px;   
+    margin-top: 120px;   
 }
 .benefits__container 
 {
@@ -351,26 +352,26 @@ p
     color: rgba(18, 21, 23, 0.9);
 }
 /*4 video <section .stats>*/
-.stats 
+.history 
 {
     border: 3px solid white;
     margin-top: 135px;
 }
-.stats .container 
+.history .container 
 {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     border: 2px solid rgb(11, 153, 201);
 }
-.stats__img-wrapper 
+.history__img-wrapper 
 {
     position: relative;
     box-shadow: -14px 26px 45px rgba(0, 0, 0, 0.39);
     display: flex;
 }
 
-.stats__img-wrapper::before
+.history__img-wrapper::before
 {
     content: "";
     width: 100%;
@@ -382,37 +383,40 @@ p
     background: #237249;
     z-index: -10;
 }
-.stats__img 
+.history__img 
 {
     width: 465px;
     clip-path: polygon(67% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
 }
-.stats__text 
+.history__text 
 {
     max-width: 460px;
     border: 3px solid orange;
     position: relative;
 }
-.stats_text::before
+.history__text::before
 {
     content: "";
     position: absolute;
-    right: -230px;
-    bottom: -160px;
+    right: -145px;
+    bottom: -290px;
     z-index: -10;
+    transform: rotate(37deg);
+
     background-image: url("../images/icons/lines.svg");
     background-size: contain;
     background-position: center;
-    width: 860px;
-    height: 620px;
     background-repeat: no-repeat;
+    
+    width: 920px;
+    height: 670px;
 }
-.stats__title 
+.history__title 
 {
     margin-bottom: 60px;
     position: relative;
 }
-.stats__title::before
+.history__title::before
 {
     content: "";
     position: absolute;
@@ -425,11 +429,11 @@ p
     background: linear-gradient(245deg, rgba(35,114,73,0.55) 0%, rgba(53,198,107,0.73) 51.85%);
     filter: blur(80px);
 }
-.stats__desc 
+.history__desc 
 {
     margin-bottom: 60px; 
 }
-.stats__pic 
+.history__pic 
 {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 23%, 11% 0);
 }
