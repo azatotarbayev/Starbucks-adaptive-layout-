@@ -68,7 +68,14 @@ a
     text-decoration: none;
     transition: opacity 0.2s;
 }
-a:hover
+button
+{
+    transition: opacity 0.2s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+a:hover, button:hover
 {
     opacity: 0.8;
 }
@@ -171,7 +178,7 @@ p
 {
     display: flex;
     gap: 45px;
-    border: 1px solid red; /*здесь остановился*/
+    border: 1px solid red; 
 }
 .stats__item 
 {
@@ -351,11 +358,12 @@ p
     line-height: 163%;
     color: rgba(18, 21, 23, 0.9);
 }
-/*4 video <section .stats>*/
+/*4 video history*/
 .history 
 {
     border: 3px solid white;
     margin-top: 135px;
+    padding-bottom: 25px; 
 }
 .history .container 
 {
@@ -436,4 +444,103 @@ p
 .history__pic 
 {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 23%, 11% 0);
+}
+/*section products*/
+.products 
+{
+    border: 10px solid purple;
+    margin-top: 100px;
+}
+.products .container 
+{
+
+}
+.products__text 
+{
+    display: flex;   
+    align-items: center;
+    gap: 70px;
+}
+
+.products__title 
+{
+    width: 400px;
+    border: 1px solid white;
+    position: relative;
+}
+
+.products__title::before
+{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    z-index: -5;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    background: linear-gradient(245deg, rgba(35,114,73,0.55) 0%, rgba(53,198,107,0.73) 51.85%);
+    filter: blur(80px);
+}
+
+.products__desc 
+{
+    width: 450px;
+    border: 1px solid white;
+}
+.products__cards 
+{
+
+}
+.card 
+{
+    text-align: center;
+    border: 1px solid white;
+    width: 270px;
+    padding: 30px;
+    padding-top: 50px;
+}
+.card__img-wrapper 
+{
+
+}
+.card__img 
+{
+
+}
+.card__title 
+{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 163%;
+    color: #fff;
+}
+.card__desc 
+{
+
+}
+.card__row
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.card__price 
+{
+    font-weight: 500;
+    font-size: 32px;
+    color: #fff;
+}
+.card__size 
+{
+
+}
+.card__btn 
+{
+    font-size: 17px;
+    padding: 15px 0;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
