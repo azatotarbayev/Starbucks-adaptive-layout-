@@ -40,13 +40,14 @@ img
 /* HEADER */
 .header 
 {
-    border: 3px solid green;
+    border: 5px solid green;
     padding: 50px 0;
 }
 .header .container 
 {
     border: 1px solid white;
     display: flex;
+    /*flex-direction: row*/
     align-items: baseline;
     /* gap: 95px; */
 }
@@ -97,7 +98,7 @@ a:hover, button:hover
 }
 .welcome .container 
 {
-    border: 3px solid blue;
+    border: 3px solid purple;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -222,7 +223,6 @@ p
 }
 .welcome__img-wrapper::after
 {
-    border: 1px solid white;
     content: "";
     position: absolute;
     bottom: 30px;
@@ -358,7 +358,7 @@ p
     line-height: 163%;
     color: rgba(18, 21, 23, 0.9);
 }
-/*4 video history*/
+/*history*/
 .history 
 {
     border: 3px solid white;
@@ -460,6 +460,7 @@ p
     display: flex;   
     align-items: center;
     gap: 70px;
+    margin-bottom: 60px;
 }
 
 .products__title 
@@ -490,12 +491,13 @@ p
 }
 .products__cards 
 {
-
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
 }
 .card 
 {
     position: relative;
-    
     text-align: center;
     /* border: 1px solid white; */
     width: 270px;
@@ -503,23 +505,39 @@ p
     padding-top: 50px;
     background-color: #121517;
     border-radius: 30px;
+    cursor: pointer;
+}
+.card:hover
+{
+    background-color: #1f1f1f;
 }
 .card::before
 {
     position: absolute;
-
     content: "";
     inset: -2px;
     background: rgba(218, 218, 218);
     background: linear-gradient(120deg, rgba(218, 218, 218, 0.7) 0%, rgba(218, 218, 218, 0.07) 42%, rgba(218, 218, 218, 0.7) 100%);
     z-index: -5;
     border-radius: 30px;
+    transition: box-shadow 0.3s;
+}
+.card:hover::before
+{
+    background: rgb(35,114,73);
+    background: linear-gradient(260deg, rgba(35,114,73,1) 0%, rgba(53,198,107,1) 100%);
+    box-shadow: 0 0 50px 5px rgb(35,114,73);
+}
+.card:hover .card__img
+{
+    transform: translateY(-8px);
 }
 .card__img-wrapper 
 {
     position: relative;
+    margin-bottom: 30px;
 }
-.card__img-wrapper::before
+.card__img-wrapper::before /*GREEN CIRCLE*/
 {
     content: "";
     display: inline-block;
@@ -535,6 +553,8 @@ p
     top: -30px;
     left: 3px;
     width: 180px;
+    filter: drop-shadow(0 4px 46px rgba(0,0,0,0.48));
+    transition: transform 0.3s;
 }
 .card__title 
 {
@@ -554,6 +574,7 @@ p
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 25px;
+    border: 1px solid white;
 }
 .card__price 
 {
@@ -563,7 +584,7 @@ p
 }
 .card__size 
 {
-
+    /*стоит посередине???*/
 }
 .card__btn 
 {
